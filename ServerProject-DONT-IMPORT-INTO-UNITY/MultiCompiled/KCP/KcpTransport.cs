@@ -204,7 +204,7 @@ namespace kcp2k
                 case 1:
                     return KcpConnection.UnreliableMaxMessageSize;
                 default:
-                    return KcpConnection.ReliableMaxMessageSize;
+                    return KcpConnection.ReliableMaxMessageSize(ReceiveWindowSize);
             }
         }
 
